@@ -1,0 +1,159 @@
+/* ===================================
+---------LITTLE CSS RESET-------------
+==================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  height: 100%;
+  min-height: 100vh;
+  font-family: var(--alata);
+  background-color: var(--lightPink);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+html {
+  font-size: 15px;
+}
+
+/* ==================================================
+-------COLOURS AND FONTS NEEDED FOR THE WEBPAGE---------------
+====================================================*/
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --darkGray: hsl(0, 0%, 55%);
+  --veryDarkGray: hsl(0, 0%, 41%);
+  --alata: "Alata", sans-serif;
+  --josefinSans: "Josefin Sans", sans-serif;
+}
+
+/* Mobile Styles */
+header {
+  padding: 1rem;
+  background-image: url("./images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.hero-section {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Black);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
+}
+.menu-toggle {
+  margin-top: 0.5rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu.show {
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem;
+}
+
+.menu li {
+  padding: 0.5rem 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--White);
+  text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+
+.hero-text {
+  margin-top: 11rem;
+  padding: 2rem;
+  border: 2px solid var(--White);
+}
+
+.hero-text > p {
+  font-size: 2.7rem;
+  /* font-weight: 300; */
+  color: var(--White);
+  font-family: var(--josefinSans);
+  line-height: 1;
+}
+
+.founder-details-section {
+  padding-top: 7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+}
+
+.founder-details-text > h2 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: var(--josefinSans);
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  color: var(--Black);
+  line-height: 1;
+}
+
+.founder-details-text > h2 + p {
+  color: var(--darkGray);
+  font-size: 1.2rem;
+}
