@@ -16,9 +16,11 @@ menuToggle.addEventListener("click", () => {
 
 
 
-
-
-
-
-
-
+// Add event listener to handle window resize
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    // Remove the "show" class and reset the menuToggle image source on desktop view
+    menu.classList.remove("show");
+    menuToggle.src = "./images/icon-hamburger.svg";
+  }
+});
