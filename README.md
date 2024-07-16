@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://github.com/Malik-Muhammed/loopstudios)
-- Live Site URL: [live site URL here](https://malik-muhammed.github.io/loopstudios/)
+- Solution URL: [click here](https://github.com/Malik-Muhammed/loopstudios)
+- Live Site URL: [click here](https://malik-muhammed.github.io/loopstudios/)
 
 ## My process
 
